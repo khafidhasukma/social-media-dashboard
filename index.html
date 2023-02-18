@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Social Media Dashboard</title>
+    </head>
+    <body>
+        <div class="bg-light pt-8 pb-32 dark:bg-dark2">
+            <div class="container">
+                <!-- header -->
+                <div class="flex flex-col justify-between md:flex-row">
+                    <div>
+                        <h1 class="text-2xl font-bold text-dark dark:text-white">Social Media Dashboard</h1>
+                        <p class="font-base text-sm">Total Followers: 23,004</p>
+                    </div>
+                    <hr class="my-4 md:hidden" />
+                    <div class="flex items-center justify-between gap-2 md:justify-start">
+                        <p class="font-base text-sm">Dark Mode</p>
+                        <div>
+                            <input type="checkbox" class="hidden" id="dark-toggle" />
+                            <label for="dark-toggle">
+                                <div
+                                    class="relative flex h-5 w-10 cursor-pointer items-center rounded-full bg-toggle p-0.5 transition duration-300 ease-in-out">
+                                    <div class="toggle-circle absolute right-0.5 h-4 w-4 rounded-full bg-white"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header -->
+            </div>
+        </div>
+        <!-- contents -->
+        <section class="container">
+            <div class="-mt-24 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <!-- facebook -->
+                <div class="box before:bg-facebook">
+                    <div class="flex gap-2">
+                        <img src="assets/img/icon-facebook.svg" alt="" />
+                        <p class="font-base">@nathanf</p>
+                    </div>
+                    <div class="my-5">
+                        <h1 class="font-amount">1987</h1>
+                        <p class="font-desc">FOLLOWERS</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="assets/img/icon-up.svg" alt="" />
+                        </div>
+                        <p class="font-bold text-limeGreen">12 Today</p>
+                    </div>
+                </div>
+
+                <!-- twitter -->
+                <div class="box before:bg-twitter">
+                    <div class="flex gap-2">
+                        <img src="assets/img/icon-twitter.svg" alt="" />
+                        <p class="font-base">@nathanf</p>
+                    </div>
+                    <div class="my-5">
+                        <h1 class="font-amount">1044</h1>
+                        <p class="font-desc">FOLLOWERS</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="assets/img/icon-up.svg" alt="" />
+                        </div>
+                        <p class="font-bold text-limeGreen">99 Today</p>
+                    </div>
+                </div>
+
+                <!-- instagram -->
+                <div class="box before:bg-gradient-to-r before:from-instaFrom before:to-instaTo">
+                    <div class="flex gap-2">
+                        <img src="assets/img/icon-instagram.svg" alt="" />
+                        <p class="font-base">@realnathanf</p>
+                    </div>
+                    <div class="my-5">
+                        <h1 class="font-amount">11K</h1>
+                        <p class="font-desc">FOLLOWERS</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="assets/img/icon-up.svg" alt="" />
+                        </div>
+                        <p class="font-bold text-limeGreen">1099 Today</p>
+                    </div>
+                </div>
+                <!-- youtube -->
+                <div class="box before:bg-youtube">
+                    <div class="flex gap-2">
+                        <img src="assets/img/icon-youtube.svg" alt="" />
+                        <p class="font-base">Nathan F.</p>
+                    </div>
+                    <div class="my-5">
+                        <h1 class="font-amount">8239</h1>
+                        <p class="font-desc">SUBSCRIBERS</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="assets/img/icon-down.svg" alt="" />
+                        </div>
+                        <p class="font-bold text-brightRed">144 Today</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="mt-12 mb-24">
+                <h1 class="font-base mb-4 text-2xl">Overview - Today</h1>
+                <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Page Views</p>
+                            <img src="assets/img/icon-facebook.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">87</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-up.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-limeGreen">3%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Likes</p>
+                            <img src="assets/img/icon-facebook.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">52</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-down.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-brightRed">2%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Likes</p>
+                            <img src="assets/img/icon-instagram.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">5426</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-up.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-limeGreen">2257%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Profile Views</p>
+                            <img src="assets/img/icon-instagram.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">52K</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-up.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-limeGreen">1375%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Retweets</p>
+                            <img src="assets/img/icon-twitter.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">117</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-up.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-limeGreen">303%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Likes</p>
+                            <img src="assets/img/icon-twitter.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">507</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-up.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-limeGreen">553%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Likes</p>
+                            <img src="assets/img/icon-youtube.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">107</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-down.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-brightRed">19%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-overview">
+                        <div class="mb-4 flex justify-between">
+                            <p class="font-base">Total Views</p>
+                            <img src="assets/img/icon-youtube.svg" alt="" />
+                        </div>
+                        <div class="flex items-end justify-between">
+                            <h1 class="font-amount2">1407</h1>
+                            <div class="flex items-center gap-1">
+                                <div>
+                                    <img src="assets/img/icon-down.svg" alt="" />
+                                </div>
+                                <p class="font-bold text-brightRed">12%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contents -->
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>

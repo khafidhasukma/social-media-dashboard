@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-white text-sm dark:bg-dark;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+@layer components {
+    .box {
+        @apply relative flex w-full cursor-pointer flex-col items-center overflow-hidden rounded bg-card p-8 text-center before:absolute before:top-0 before:h-1 before:w-full hover:bg-hoverLight dark:bg-cardDark dark:hover:bg-hoverDark;
+    }
+    .box-overview {
+        @apply cursor-pointer rounded bg-card p-6 hover:bg-hoverLight dark:bg-cardDark dark:hover:bg-hoverDark;
+    }
+    .font-base {
+        @apply font-bold text-textLight dark:text-textDark;
+    }
+    .font-amount {
+        @apply text-5xl font-bold text-dark dark:text-white;
+    }
+    .font-amount2 {
+        @apply text-2xl font-bold dark:text-white;
+    }
+    .font-desc {
+        @apply mt-2 text-xs tracking-[0.25em] text-textLight;
+    }
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply -translate-x-5 bg-dark bg-none;
+}
+
+#dark-toggle:checked ~ label div {
+    @apply bg-gradient-to-r from-toggleFrom to-toggleTo;
+}
