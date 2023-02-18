@@ -39,3 +39,11 @@
 #dark-toggle:checked ~ label div {
     @apply bg-gradient-to-r from-toggleFrom to-toggleTo;
 }
+
+#dark-toggle ~ label div {
+    @apply bg-gradient-to-r from-toggleFrom to-toggleTo;
+}
+
+#dark-toggle ~ label div.toggle-circle {
+    @apply bg-white bg-none;
+}

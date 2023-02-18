@@ -880,6 +880,20 @@ body {
   --tw-gradient-to: hsl(146, 68%, 55%);
 }
 
+#dark-toggle ~ label div{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: hsl(210, 78%, 56%);
+  --tw-gradient-to: hsl(210 78% 56% / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: hsl(146, 68%, 55%);
+}
+
+#dark-toggle ~ label div.toggle-circle{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-image: none;
+}
+
 .before\:bg-facebook::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
